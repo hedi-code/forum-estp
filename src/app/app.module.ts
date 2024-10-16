@@ -9,6 +9,7 @@ import { TitleSeparatorComponent } from './title-separator/title-separator.compo
 import { EquipeComponent } from './equipe/equipe.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
 import { GalerieComponent } from './galerie/galerie.component';
+import { MemmbresComponent } from './memmbres/memmbres.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GalerieComponent } from './galerie/galerie.component';
     TitleSeparatorComponent,
     EquipeComponent,
     PartenaireComponent,
-    GalerieComponent
+    GalerieComponent,
+    MemmbresComponent
   ],
   imports: [
     BrowserModule,

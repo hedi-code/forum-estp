@@ -1,0 +1,15 @@
+<title-separator title="{{title}}"></title-separator>
+<div class="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+    <ng-container *ngFor="let data of loopData">
+        <div target="_blank"
+            class="w-full h-full gap-2 flex flex-col justify-center content-center justify-self-center items-center content-center justify-items-center lg:p-4 p-5 bg-white rounded-xl flex flex-col justify-between align-center">
+            <img alt="" srcset="" class="w-full px-8 h-[200px]">
+            <p class="text-center">{{data.prenom}} {{data.nom}}</p>
+            <p class="text-center text-sm">{{data.fonction}}</p>
+            <p class="text-center text-md">{{data.mail}}</p>
+            <a class="px-3 py-1 text-center bg-primary rounded-lg text-white font-semibold w-full" href="{{data.link}}"
+                target="_blank">Voir le profil LinkedIn</a>
+        </div>
+    </ng-container>
+
+</div>

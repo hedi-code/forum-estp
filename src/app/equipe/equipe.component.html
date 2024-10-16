@@ -24,7 +24,8 @@
             <p>Décideurs et leaders de l'association, les membres du bureau sont chargés de superviser et de coordonner
                 les différents pôles. Ils veillent à assurer le bon déroulement des activités et garantissent un
                 fonctionnement harmonieux de l'ensemble de l'organisation.</p>
-            <button class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
+            <button (click)="goToMembresBureau()"
+                class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
                 mombres du bureau</button>
 
         </div>
@@ -34,7 +35,8 @@
             <p>Dynamique et créatif, le pôle communication est responsable de la promotion de l'événement. Ses membres
                 s'occupent également de la conception et de la réalisation de tous les supports visuels utilisés lors du
                 Forum, garantissant ainsi une image accueillante et attrayante. <br><br></p>
-            <button class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full ">Voir les
+            <button (click)="goToMembresCommunication()"
+                class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full ">Voir les
                 membres du pôle de communication</button>
         </div>
 
@@ -44,7 +46,8 @@
             <p>Déterminé et persévérant, le pôle commercial est chargé de contacter les entreprises souhaitant
                 participer au Forum. En proposant différents packs et options, ses membres aident à proposer des stands
                 qui répondent aux attentes des entreprises tout en tenant compte des besoins des étudiants.</p>
-            <button class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
+            <button (click)="goToMembresCommercial()"
+                class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
                 membres du pôle de commercial</button>
         </div>
         <div class="bg-white rounded-xl flex flex-col justify-between p-4 gap-2 text-justify">
@@ -53,7 +56,8 @@
             <p>Organisé et méthodique, le pôle logistique est chargé de l'ensemble de l'organisation du Forum. L'équipe
                 s'occupe de l'installation générale le jour de l’évènement, de la création de plans, de l'achat de
                 mobilier, du démarchage des traiteurs, ainsi que de la mise en place des conférences.</p>
-            <button class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
+            <button (click)="goToMembresLogistique()"
+                class="px-5 py-2 bold bg-primary rounded-lg text-white font-semibold w-full h-full">Voir les
                 membres du pôle logistique</button>
         </div>
     </div>

@@ -1,10 +1,12 @@
 <ng-container *ngIf="dataType === 'entreprise'">
-    <title-separator title="Nos entreprise partenaires"></title-separator>
+    <title-separator title="Nos entreprises partenaires"></title-separator>
     <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
         <ng-container *ngFor="let data of loopData">
-            <a class="lg:p-14 p-5 bg-white rounded-xl flex flex-col justify-between" href="{{data.site}}">
-                <img src=" assets\partenaire-entreprises\LogoSite\Bouygues.jpg" alt="" srcset="">
-                <p class="text-center">{{data.Entreprise}}</p>
+            <a target="_blank"
+                class="w-full h-full gap-2 flex flex-col justify-center content-center justify-self-center items-center content-center justify-items-center lg:p-4 p-5 bg-white rounded-xl flex flex-col justify-between align-center"
+                href="{{data.site}}">
+                <img src="{{data.img}}" alt="" srcset="" class="max-h-[5rem] w-full px-8">
+                <p class="text-center">{{data.Nom}}</p>
             </a>
         </ng-container>
     </div>
@@ -13,9 +15,10 @@
     <title-separator title="Nos école partenaires"></title-separator>
     <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
         <ng-container *ngFor="let data of loopData">
-            <a class="lg:p-14 p-5 bg-white rounded-xl flex flex-col justify-between" href="{{data.site}}">
-                <img src="{{data.src}}" alt="" srcset="">
-                <p class="text-center mt-4">{{data.nomEcole}}</p>
+            <a class="w-full h-full gap-2 flex flex-col justify-center content-center justify-self-center items-center content-center justify-items-center lg:p-4 p-5 bg-white rounded-xl flex flex-col justify-between align-center"
+                href="{{data.site}}" target="_blank">
+                <img src="{{data.img}}" alt="" srcset="" class="max-h-[5rem] w-full px-8">
+                <p class="text-center">{{data.nomEcole}}</p>
             </a>
         </ng-container>
     </div>
