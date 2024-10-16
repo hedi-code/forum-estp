@@ -10,6 +10,8 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MemmbresComponent } from './memmbres/memmbres.component';
+import { FooterComponent } from './footer/footer.component';
+import { MentionComponent } from './mention/mention.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MemmbresComponent } from './memmbres/memmbres.component';
     EquipeComponent,
     PartenaireComponent,
     GalerieComponent,
-    MemmbresComponent
+    MemmbresComponent,
+    FooterComponent,
+    MentionComponent
   ],
   imports: [
     BrowserModule,
