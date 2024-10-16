@@ -4,7 +4,18 @@
             <a href="#">
                 <img src="assets/logo-separateur/logo-white.png" class="w-36">
             </a>
-            <div class="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0">
+            <div class="absolute right-5 lg:hidden cursor-pointer" (click)="toggleNav()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M3.75 6H20.25" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M3.75 18H20.25" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <div class="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0"
+                [ngClass]="{'hidden':openNav}">
                 <div class="relative flex flex-col">
                     <a (click)="togglePartenaire()"
                         class="cursor-pointer flex font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
@@ -38,7 +49,8 @@
                     routerLink="galerie"> Galerie
                 </a>
             </div>
-            <div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
+            <div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0"
+                [ngClass]="{'hidden':openNav}">
                 <a class="cursor-pointer font-semibold font-inter rounded-lg bg-white px-8 py-2 text-center text-primary hover:bg-gray-800"
                     href="https://app.forumetp.fr/login?redirect=https%3A%2F%2Fapp.forumetp.fr%2F" target="_blank">
                     Espace entreprises </a>
