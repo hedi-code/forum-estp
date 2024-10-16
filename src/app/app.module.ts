@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { TitleSeparatorComponent } from './title-separator/title-separator.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { PartenaireComponent } from './partenaire/partenaire.component';
+import { GalerieComponent } from './galerie/galerie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    TitleSeparatorComponent
+    TitleSeparatorComponent,
+    EquipeComponent,
+    PartenaireComponent,
+    GalerieComponent
   ],
   imports: [
     BrowserModule,

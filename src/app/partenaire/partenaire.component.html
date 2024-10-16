@@ -1,0 +1,33 @@
+<ng-container *ngIf="dataType === 'entreprise'">
+    <title-separator title="Nos entreprise partenaires"></title-separator>
+    <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+        <ng-container *ngFor="let data of loopData">
+            <a class="p-14 bg-white rounded-xl flex flex-col justify-between h-[250px]" href="{{data.site}}">
+                <img src=" assets\partenaire-entreprises\LogoSite\Bouygues.jpg" alt="" srcset="">
+                <p class="text-center">{{data.Entreprise}}</p>
+            </a>
+        </ng-container>
+    </div>
+</ng-container>
+<ng-container *ngIf="dataType === 'ecole'">
+    <title-separator title="Nos école partenaires"></title-separator>
+    <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+        <ng-container *ngFor="let data of loopData">
+            <a class="p-14 bg-white rounded-xl flex flex-col justify-between h-[250px]" href="{{data.site}}">
+                <img src="{{data.src}}" alt="" srcset="">
+                <p class="text-center">{{data.nomEcole}}</p>
+            </a>
+        </ng-container>
+    </div>
+</ng-container>
+<ng-container *ngIf="dataType === 'presse'">
+    <title-separator title="Nos partenaires presse"></title-separator>
+    <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+        <ng-container *ngFor="let data of loopData">
+            <a class="p-14 bg-white rounded-xl flex flex-col justify-between h-[250px]" href="{{data.site}}">
+                <img src="{{data.src}}" alt="" srcset="">
+                <p class="text-center">{{data.nomEcole}}</p>
+            </a>
+        </ng-container>
+    </div>
+</ng-container>

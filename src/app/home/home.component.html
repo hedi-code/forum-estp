@@ -55,7 +55,8 @@
             <img src="assets\partenaire-entreprises\LogoSite\Vinci construction.jpg" alt="" srcset="">
             <p class="text-center">vinci</p>
         </div>
-        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center">
+        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center cursor-pointer"
+            (click)="goToPartenaireEntreprise()">
             <span class="text-md text-primary basis-1/2 font-bold text-center">Découvrir toutes nos entreprises
                 partenaires</span>
         </div>
@@ -76,7 +77,8 @@
             <img src="assets\partenaire-ecole\Logos\HEC PARIS.jpg" alt="" srcset="">
             <p class="text-center">HEC</p>
         </div>
-        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center">
+        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center cursor-pointer"
+            (click)="goToPartenaireEcole()">
             <span class="text-md text-primary basis-1/2 font-bold text-center">Découvrir toutes nos écoles
                 partenaires</span>
         </div>
@@ -97,9 +99,10 @@
             <img src="assets\partenaire-presse\Logos\Le Moniteur.png" alt="" srcset="">
             <p class="text-center">Le moniteur</p>
         </div>
-        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center">
-            <span class="text-md text-primary basis-1/2 font-bold text-center">Découvrir toutes nos écoles
-                partenaires</span>
+        <div class="p-14 bg-white rounded-xl flex flex-col justify-center align-center cursor-pointer"
+            (click)="goToPartenairePresse()">
+            <span class="text-md text-primary basis-1/2 font-bold text-center">Découvrir toutes nos partenaire
+                presse</span>
         </div>
     </div>
 </div>
