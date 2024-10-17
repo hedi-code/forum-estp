@@ -18,29 +18,51 @@
                 [ngClass]="{'hidden':openNav}">
                 <div class="relative flex flex-col">
                     <a (click)="togglePartenaire()"
-                        class="cursor-pointer flex font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
-                        Partenaire <svg [ngClass]="{'rotate-180':!openPartenaire}"
+                        class="hidden lg:flex cursor-pointer font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
+                        Partenaires <svg [ngClass]="{'rotate-180':!openPartenaire}"
                             class="fill-current transition w-6 h-6" viewBox="0 0 24 24">
                             <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
                         </svg>
                     </a>
                     <div [ngClass]="{'hidden':openPartenaire}"
-                        class="z-50 flex w-full flex-col rounded-lg px-5 lg:absolute lg:top-20 lg:w-96 bg-gray-100">
-                        <a (click)="goToPartenaireEcole();togglePartenaire();toggleNav()">
-                            <h2 class="cursor-pointer font-inter mb-1 mt-5 text-lg font-medium text-black"> Nos
-                                partenaires ecole </h2>
-                        </a>
+                        class="z-50 bg-primary text-white flex w-full flex-col rounded-lg px-5 lg:absolute lg:top-20 lg:w-96 bg-gray-100">
                         <a (click)="goToPartenaireEntreprise();togglePartenaire();toggleNav()">
-                            <h2 class="cursor-pointer font-inter mb-1 mt-5 text-lg font-medium text-black"> Nos
-                                partenaires entreprises
+                            <h2 class="cursor-pointer font-inter mb-1 mt-5 text-lg font-medium"> Nos entreprises
+                                partenaires
+                            </h2>
+                        </a>
+                        <a (click)="goToPartenaireEcole();togglePartenaire();toggleNav()">
+                            <h2 class="cursor-pointer font-inter mb-1 mt-5 text-lg font-medium"> Nos écoles partenaires
                             </h2>
                         </a>
                         <a (click)="goToPartenairePresse();togglePartenaire();toggleNav()">
-                            <h2 class="cursor-pointer font-inter mb-1 mt-5 text-lg font-medium text-black"> No
-                                partenaires presse </h2>
+                            <h2 class="cursor-pointer font-inter mb-5 mt-5 text-lg font-medium"> Nos partenaires presse
+                            </h2>
                         </a>
                     </div>
                 </div>
+                <a (click)="goToPartenaireEntreprise();togglePartenaire();toggleNav()">
+                    <h2
+                        class="lg:hidden cursor-pointer font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
+                        Nos
+                        entreprises
+                        partenaires
+                    </h2>
+                </a>
+                <a (click)="goToPartenaireEcole();togglePartenaire();toggleNav()">
+                    <h2
+                        class="lg:hidden  cursor-pointer font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
+                        Nos
+                        écoles partenaires
+                    </h2>
+                </a>
+                <a (click)="goToPartenairePresse();togglePartenaire();toggleNav()">
+                    <h2
+                        class="lg:hidden cursor-pointer font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800">
+                        Nos
+                        partenaires presse
+                    </h2>
+                </a>
                 <a (click)="toggleNav()"
                     class="cursor-pointer font-inter rounded-lg lg:px-6 lg:py-4 lg: lg:hover:text-gray-800"
                     routerLink="equipe"> Notre

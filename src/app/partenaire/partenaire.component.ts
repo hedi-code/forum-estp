@@ -9,305 +9,1207 @@ import { ActivatedRoute } from '@angular/router';
 export class PartenaireComponent {
   entreprise: any = [
     {
-      "Nom": "Fayat",
+      "nom": "Bouygues",
+      "Pack": "Plus",
+      "Surface": 150,
+      "site": "https://www.bouygues.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Bouygues.jpg"
+    },
+    {
+      "nom": "Vinci",
+      "Pack": "Plus",
+      "Surface": 144,
+      "site": "https://www.vinci.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Vinci.png"
+    },
+    {
+      "nom": "Fayat",
       "Pack": "Plus",
       "Surface": 110,
       "site": "https://fayat.com",
       "img": "assets/partenaire-entreprises/LogoSite/Fayat.jpg"
     },
     {
-      "Nom": "NGE",
+      "nom": "NGE",
       "Pack": "Plus",
       "Surface": 80,
       "site": "https://www.nge.fr",
       "img": "assets/partenaire-entreprises/LogoSite/NGE.png"
     },
     {
-      "Nom": "DEMATHIEU BARD",
+      "nom": "Eiffage ",
+      "Pack": "Plus",
+      "Surface": 60,
+      "site": "https://www.eiffage.com"
+    },
+    {
+      "nom": "Léon grosse ",
+      "Pack": "Plus",
+      "Surface": 52,
+      "site": "https://www.leongrosse.fr"
+    },
+    {
+      "nom": "DEMATHIEU BARD",
       "Pack": "Plus",
       "Surface": 46,
       "site": "https://www.demathieu-bard.fr",
       "img": "assets/partenaire-entreprises/LogoSite/DEMATHIEU BARD.png"
     },
     {
-      "Nom": "Groupe Pigeon",
+      "nom": "Groupe BIR",
       "Pack": "Plus",
-      "Surface": 24,
-      "site": "https://www.groupe-pigeon.com",
-      "img": "assets/partenaire-entreprises/LogoSite/Groupe Pigeon.png"
+      "Surface": 40,
+      "site": "https://www.groupebir.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe BIR.png"
     },
     {
-      "Nom": "Groupe Legendre",
+      "nom": "Spie Batignolles",
+      "Pack": "Plus",
+      "Surface": 36,
+      "site": "https://www.spiebatignolles.fr"
+    },
+    {
+      "nom": "Paris Ouest Construction",
+      "Pack": "Plus",
+      "Surface": 32,
+      "site": "https://www.paris-ouest.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Paris Ouest Construction.jpg"
+    },
+    {
+      "nom": "Fédération des Sociétés d'Expertise ",
+      "Pack": "Plus",
+      "Surface": 28,
+      "site": "https://www.f-s-e.org"
+    },
+    {
+      "nom": "GCC",
+      "Pack": "Plus",
+      "Surface": 28,
+      "site": "https://www.gcc-groupe.com",
+      "img": "assets/partenaire-entreprises/LogoSite/GCC.png"
+    },
+    {
+      "nom": "Groupe Legendre",
       "Pack": "Plus",
       "Surface": 24,
       "site": "https://www.groupe-legendre.com",
       "img": "assets/partenaire-entreprises/LogoSite/Groupe Legendre.png"
     },
     {
-      "Nom": "Balas",
+      "nom": "Groupe Pigeon",
       "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.balas.com",
-      "img": "assets/partenaire-entreprises/LogoSite/Balas.png"
+      "Surface": 24,
+      "site": "https://www.groupe-pigeon.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe Pigeon.png"
     },
     {
-      "Nom": "Demathieu Bard Immobilier",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://demathieu-bard-immobilier.fr",
-      "img": "assets/partenaire-entreprises/LogoSite/Demathieu Bard Immobilier.png"
-    },
-    {
-      "Nom": "Azaleo",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.azaleo.fr",
-      "img": "assets/partenaire-entreprises/LogoSite/Azaleo.png"
-    },
-    {
-      "Nom": "Groupe ADP",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.parisaeroport.fr/homepage-groupe",
-      "img": "assets/partenaire-entreprises/LogoSite/Groupe ADP.png"
-    },
-    {
-      "Nom": "EY",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.ey.com/fr_fr",
-      "img": "assets/partenaire-entreprises/LogoSite/EY.jpg"
-    },
-    {
-      "Nom": "CERN",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://home.cern/",
-      "img": "assets/partenaire-entreprises/LogoSite/CERN.jpg"
-    },
-    {
-      "Nom": "Fédération des Sociétés d'Expertise",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.fse.fr",
-      "img": "assets/partenaire-entreprises/LogoSite/Fédération des Sociétés d_Expertise .jpg"
-    },
-    {
-      "Nom": "Talan",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://talan.com/",
-      "img": "assets/partenaire-entreprises/LogoSite/Talan.png"
-    },
-    {
-      "Nom": "Groupe BIR",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://groupe-bir.fr",
-      "img": "assets/partenaire-entreprises/LogoSite/Groupe BIR.png"
-    },
-    {
-      "Nom": "Subsea 7",
-      "Pack": "Plus",
-      "Surface": 12,
-      "site": "https://www.subsea7.com",
-      "img": "assets/partenaire-entreprises/LogoSite/Subsea 7.jpeg"
-    },
-    {
-      "Nom": "Artelia Holding",
-      "Pack": "Plus",
-      "Surface": 18,
-      "site": "https://www.arteliagroup.com/fr/",
-      "img": "assets/partenaire-entreprises/LogoSite/ARTELIA HOLDING.png"
-    },
-    {
-      "Nom": "KAUFMAN & BROAD",
+      "nom": "KAUFMAN & BROAD",
       "Pack": "Plus",
       "Surface": 21,
       "site": "https://corporate.kaufmanbroad.fr/groupe-kaufman-broad/",
       "img": "assets/partenaire-entreprises/LogoSite/KAUFMAN & BROAD.png"
     },
     {
-      "Nom": "Genere",
+      "nom": "Etandex",
+      "Pack": "Plus",
+      "Surface": 21,
+      "site": "https://www.etandex.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Etandex.jpg"
+    },
+    {
+      "nom": "Syntec Ingénierie",
+      "Pack": "Plus",
+      "Surface": 21,
+      "site": "https://www.syntec-ingenierie.fr"
+    },
+    {
+      "nom": "ARTELIA HOLDING",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.arteliagroup.com/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/ARTELIA HOLDING.png"
+    },
+    {
+      "nom": "Genere",
       "Pack": "Plus",
       "Surface": 18,
       "site": "https://www.genere.fr",
       "img": "assets/partenaire-entreprises/LogoSite/Genere.png"
     },
     {
-      "Nom": "Egis",
+      "nom": "BEG Ingénierie",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.beg-ing.com",
+      "img": "assets/partenaire-entreprises/LogoSite/BEG Ingénierie.ps"
+    },
+    {
+      "nom": "Schindler",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.schindler.fr/fr.html"
+    },
+    {
+      "nom": "Ateliers de France",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://ateliersdefrance.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Ateliers de France.jpg"
+    },
+    {
+      "nom": "Setec AS",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.setec.fr"
+    },
+    {
+      "nom": "JLL Tétris",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.jll.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/JLL Tétris.jpg"
+    },
+    {
+      "nom": "Costantini",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "www.https://costantini.eu/",
+      "img": "assets/partenaire-entreprises/LogoSite/Costantini.png"
+    },
+    {
+      "nom": "INGEROP",
+      "Pack": "Plus",
+      "Surface": 18,
+      "site": "https://www.ingerop.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/INGEROP.jpg"
+    },
+    {
+      "nom": "Egis",
       "Pack": "Plus",
       "Surface": 15,
       "site": "https://www.egis-group.com/fr",
       "img": "assets/partenaire-entreprises/LogoSite/Egis.jpg"
     },
     {
-      "Nom": "Groupe ADP",
+      "nom": "Altarea",
+      "Pack": "Plus",
+      "Surface": 15,
+      "site": "https://www.altarea.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Altarea.png"
+    },
+    {
+      "nom": "Immobilière 3F",
+      "Pack": "Plus",
+      "Surface": 15,
+      "site": "https://www.groupe3f.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Immobilière 3F.png"
+    },
+    {
+      "nom": "Fayolle",
+      "Pack": "Plus",
+      "Surface": 15,
+      "site": "https://fayolle.eu",
+      "img": "assets/partenaire-entreprises/LogoSite/Fayolle.png"
+    },
+    {
+      "nom": "Covivio",
+      "Pack": "Plus",
+      "Surface": 15,
+      "site": "https://www.covivio.eu/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Covivio.pdf"
+    },
+    {
+      "nom": "GSE",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.gsegroup.com/?gad_source=1&gbraid=0AAAAABHR9gHItAH0BoUAmXqgwDyxiNXVk&gclid=Cj0KCQjw6oi4BhD1ARIsAL6pox2uqavQ_NE2-ynnZJ-NkkPCViRn5w5iuszyBim328amx4bxYki6hTEaAlIFEALw_wcB",
+      "img": "assets/partenaire-entreprises/LogoSite/GSE.jpg"
+    },
+    {
+      "nom": "Groupe ADP",
       "Pack": "Plus",
       "Surface": 12,
       "site": "https://www.parisaeroport.fr/homepage-groupe",
       "img": "assets/partenaire-entreprises/LogoSite/Groupe ADP.png"
+    },
+    {
+      "nom": "Systra",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.systra.com/france/"
+    },
+    {
+      "nom": "Spie CityNetworks",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.spie.com/fr"
+    },
+    {
+      "nom": "Essor",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.essor.group"
+    },
+    {
+      "nom": "Subsea 7",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.subsea7.com/en/index.html"
+    },
+    {
+      "nom": "Maia",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://groupe-maia.com/",
+      "img": "assets/partenaire-entreprises/LogoSite/Maia.png"
+    },
+    {
+      "nom": "Saipem SA",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.saipem.fr"
+    },
+    {
+      "nom": "Département des Hauts-de-Seine",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.hauts-de-seine.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Département des Hauts-de-Seine.jpg"
+    },
+    {
+      "nom": "Nexity",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://nexity.group/recrutement",
+      "img": "assets/partenaire-entreprises/LogoSite/Nexity.jpg"
+    },
+    {
+      "nom": "TERIDEAL",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.terideal.fr"
+    },
+    {
+      "nom": "Edvance",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.edvance.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Edvance.png"
+    },
+    {
+      "nom": "Balas ",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://groupe-balas.com"
+    },
+    {
+      "nom": "Baudin Châteauneuf",
+      "Pack": "Plus",
+      "Surface": 12,
+      "site": "https://www.baudinchateauneuf.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Baudin Châteauneuf.jpg"
+    },
+    {
+      "nom": "Perenco",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.perenco.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Perenco.png"
+    },
+    {
+      "nom": "Eurogroup Consulting",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.eurogroupconsulting.com/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Eurogroup Consulting.jpg"
+    },
+    {
+      "nom": "Sadrin Rapin",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://sadrin-rapin.fr"
+    },
+    {
+      "nom": "Azaleo",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://azaleo.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Azaleo.png"
+    },
+    {
+      "nom": "Legendry",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.legendryconstruction.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Legendry.jpg"
+    },
+    {
+      "nom": "Risk Control",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://risk-control.fr"
+    },
+    {
+      "nom": "Talan",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://talan.com"
+    },
+    {
+      "nom": "Service d'Infrastructure de la Défense",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.defense.gouv.fr/sga/nous-connaitre/organisation-du-sga/directions/service-dinfrastructure-defense"
+    },
+    {
+      "nom": "Essec Business School",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.essec.edu/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Essec Business School.jpg"
+    },
+    {
+      "nom": "Builders and Partners (groupe Vertical Sea)",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.vertical-sea.com/le-groupe/"
+    },
+    {
+      "nom": "Tractebel Engineering S.A.",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://tractebel-engie.fr/fr"
+    },
+    {
+      "nom": "Aptiskills",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.aptiskills.fr"
+    },
+    {
+      "nom": "Arcadis",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.arcadis.com/fr-fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Arcadis.jpg"
+    },
+    {
+      "nom": "BTP Consultants ",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.btp-consultants.fr"
+    },
+    {
+      "nom": "Méditerranée environnement",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.lajus.fr"
+    },
+    {
+      "nom": "RABOT DUTILLEUL CONSTRUCTION",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.rabotdutilleul.com",
+      "img": "assets/partenaire-entreprises/LogoSite/RABOT DUTILLEUL CONSTRUCTION.jpg"
+    },
+    {
+      "nom": "Kardham",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.kardham.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Kardham.png"
+    },
+    {
+      "nom": "SMAC",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.smac-sa.com"
+    },
+    {
+      "nom": "Groupe Unifer",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.uif-travaux.fr"
+    },
+    {
+      "nom": "Groupe IDEC",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.groupeidec.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe IDEC.png"
+    },
+    {
+      "nom": "LEAF INGENIERIE",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://leaf-ingenierie.com"
+    },
+    {
+      "nom": "H2air",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://h2air.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/H2air.jpg"
+    },
+    {
+      "nom": "Deepki",
+      "Pack": "Plus",
+      "Surface": 9,
+      "site": "https://www.deepki.com/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Deepki.jpg"
+    },
+    {
+      "nom": "SNCF",
+      "Pack": "Simple",
+      "Surface": 18,
+      "site": "https://emploi.sncf.com/"
+    },
+    {
+      "nom": "COBAT CONSTRUCTIONS",
+      "Pack": "Simple",
+      "Surface": 18,
+      "site": "https://www.cobatconstructions.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/COBAT CONSTRUCTIONS.png"
+    },
+    {
+      "nom": "CERN",
+      "Pack": "Simple",
+      "Surface": 18,
+      "site": "https://home.cern/fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CERN.jpg"
+    },
+    {
+      "nom": "Agap2 - Moongy",
+      "Pack": "Simple",
+      "Surface": 18,
+      "site": "https://moongy.group/nos-societes/agap2/",
+      "img": "assets/partenaire-entreprises/LogoSite/Agap2 - Moongy.png"
+    },
+    {
+      "nom": "GAGNERAUD CONSTRUCTION",
+      "Pack": "Simple",
+      "Surface": 18,
+      "site": "https://www.gagneraud.fr"
+    },
+    {
+      "nom": "Technip Energies",
+      "Pack": "Simple",
+      "Surface": 15,
+      "site": "https://www.ten.com/fr"
+    },
+    {
+      "nom": "Seqens",
+      "Pack": "Simple",
+      "Surface": 15,
+      "site": "https://www.seqens.fr/"
+    },
+    {
+      "nom": "TERNERGIE SOLUTIONS",
+      "Pack": "Simple",
+      "Surface": 15,
+      "site": "https://tenergie.fr/nos-solutions/"
+    },
+    {
+      "nom": "Autodesk ",
+      "Pack": "Simple",
+      "Surface": 15,
+      "site": "https://www.autodesk.com/fr"
+    },
+    {
+      "nom": "Briand",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.briand.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Briand.jpg"
+    },
+    {
+      "nom": "Aurige",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://aurige.group/fr/notregroupe",
+      "img": "assets/partenaire-entreprises/LogoSite/Aurige.png"
+    },
+    {
+      "nom": "KPMG",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://kpmg.com/fr/fr.html",
+      "img": "assets/partenaire-entreprises/LogoSite/KPMG.jpg"
+    },
+    {
+      "nom": "Eight Advisory",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.8advisory.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Eight Advisory.jpg"
+    },
+    {
+      "nom": "EY",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.ey.com/fr_fr",
+      "img": "assets/partenaire-entreprises/LogoSite/EY.jpg"
+    },
+    {
+      "nom": "Lidl France",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://emplois.lidl.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Lidl France.png"
+    },
+    {
+      "nom": "Infraneo",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.infraneo.com/groupe-infraneo/",
+      "img": "assets/partenaire-entreprises/LogoSite/Infraneo.png"
+    },
+    {
+      "nom": "EPC DEMOSTEN",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://epc-demosten.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/EPC DEMOSTEN.png"
+    },
+    {
+      "nom": "Marine Nationale",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.defense.gouv.fr/marine",
+      "img": "assets/partenaire-entreprises/LogoSite/Marine Nationale.jpg"
+    },
+    {
+      "nom": "CET Ingénierie",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://cet-ingenierie.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CET Ingénierie.jpg"
+    },
+    {
+      "nom": "CESI",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.cesi.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CESI.jpg"
+    },
+    {
+      "nom": "Turner & Townsend",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.turnerandtownsend.com"
+    },
+    {
+      "nom": "Chantiers de l'Atlantique",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://chantiers-atlantique.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Chantiers de l_Atlantique.svg"
+    },
+    {
+      "nom": "Groupe Treuil",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.treuil.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe Treuil.jpg"
+    },
+    {
+      "nom": "PHIDA groupe SA ",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://phida-groupe.ch"
+    },
+    {
+      "nom": "RIVP",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.rivp.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/RIVP.jpg"
+    },
+    {
+      "nom": "SOCOTEC CONSTRUCTION",
+      "Pack": "Simple",
+      "Surface": 12,
+      "site": "https://www.socotec.fr/votre-secteur/construction"
+    },
+    {
+      "nom": "Gnat SA",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.gnat.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Gnat SA.png"
+    },
+    {
+      "nom": "Groupe GB",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://groupe-gb.fr/notre-groupe/",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe GB.jpg"
+    },
+    {
+      "nom": "European Homes",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://e-h.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/European Homes.pdf"
+    },
+    {
+      "nom": "Quartus",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.groupe-quartus.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Quartus.png"
+    },
+    {
+      "nom": "Deloitte",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www2.deloitte.com/fr/fr/pages/home.html",
+      "img": "assets/partenaire-entreprises/LogoSite/Deloitte.jpg"
+    },
+    {
+      "nom": "Colliers",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.colliers.com/fr-fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Colliers.png"
+    },
+    {
+      "nom": "CEA",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.cea.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CEA.jpg"
+    },
+    {
+      "nom": "Calq SAS",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.calq.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Calq SAS.png"
+    },
+    {
+      "nom": "Oméa",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.omeaconseil.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Oméa.jpg"
+    },
+    {
+      "nom": "CIG",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.cig929394.fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/CIG.jpg"
+    },
+    {
+      "nom": "Maitre Cube",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://maitrecube.fr"
+    },
+    {
+      "nom": "Oteis",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.oteis.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Oteis.jpg"
+    },
+    {
+      "nom": "TPF Ingénierie",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.tpf-i.fr"
+    },
+    {
+      "nom": "Epitech recrutement",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.e-epitech.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Epitech recrutement.png"
+    },
+    {
+      "nom": "Build2B",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://build2b.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Build2B.png"
+    },
+    {
+      "nom": "Parlym",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.parlym.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Parlym.png"
+    },
+    {
+      "nom": "Groupe Fondasol",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.groupefondasol.com/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe Fondasol.jpg"
+    },
+    {
+      "nom": "SCE",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://sce.fr"
+    },
+    {
+      "nom": "GreenAffair",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.greenaffair.com",
+      "img": "assets/partenaire-entreprises/LogoSite/GreenAffair.png"
+    },
+    {
+      "nom": "Axa IM",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.axa-im.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Axa IM.jpeg"
+    },
+    {
+      "nom": "Groupe RATP",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.ratp.fr/groupe-ratp",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe RATP.jpg"
+    },
+    {
+      "nom": "Ekium",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.ekium.eu",
+      "img": "assets/partenaire-entreprises/LogoSite/Ekium.jpg"
+    },
+    {
+      "nom": "Arep",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.arep.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Arep.png"
+    },
+    {
+      "nom": "APL Data Center",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.apl-datacenter.com/fr/",
+      "img": "assets/partenaire-entreprises/LogoSite/APL Data Center.png"
+    },
+    {
+      "nom": "Vicat",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.vicat.fr"
+    },
+    {
+      "nom": "DEKRA services France ",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.dekra-industrial.fr/"
+    },
+    {
+      "nom": "Sia Partners",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.sia-partners.com/fr"
+    },
+    {
+      "nom": "Groupe Angevin",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.groupe-angevin.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Groupe Angevin.png"
+    },
+    {
+      "nom": "CBRE",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.cbre.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CBRE.png"
+    },
+    {
+      "nom": "Equad RCC",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.equad.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Equad RCC.jpg"
+    },
+    {
+      "nom": "CDC habitat",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.cdc-habitat.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/CDC habitat.jpg"
+    },
+    {
+      "nom": "BNP real Estate",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.realestate.bnpparibas.fr/fr",
+      "img": "assets/partenaire-entreprises/LogoSite/BNP real Estate.png"
+    },
+    {
+      "nom": "Cap ingelec",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.capingelec.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Cap ingelec.jpg"
+    },
+    {
+      "nom": "Menard",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.menardfrance.fr/"
+    },
+    {
+      "nom": "Piman consultants",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://piman-group.fr/entite/piman-consultants/",
+      "img": "assets/partenaire-entreprises/LogoSite/Piman consultants.png"
+    },
+    {
+      "nom": "PWC",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.pwc.fr/fr.html",
+      "img": "assets/partenaire-entreprises/LogoSite/PWC.png"
+    },
+    {
+      "nom": "Valorem",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.valorem-energie.com"
+    },
+    {
+      "nom": "Est Ouvrages",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "http://estouvrages.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Est Ouvrages.png"
+    },
+    {
+      "nom": "ENOE",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.enoe-energie.fr"
+    },
+    {
+      "nom": "RENOVER",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.renover.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/RENOVER.pdf"
+    },
+    {
+      "nom": "EP2C Energy",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.ep2c-energy.com",
+      "img": "assets/partenaire-entreprises/LogoSite/EP2C Energy.jpg"
+    },
+    {
+      "nom": "Euretudes",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://euretudes.fr"
+    },
+    {
+      "nom": "SMABTP",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.smabtp.fr/sma/assurance/"
+    },
+    {
+      "nom": "Ariess Consulting ",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.ariess-consulting.eu"
+    },
+    {
+      "nom": "Tasq",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://tasq-om.fr"
+    },
+    {
+      "nom": "GPC S.A",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://gpcsa.com",
+      "img": "assets/partenaire-entreprises/LogoSite/GPC S.A.png"
+    },
+    {
+      "nom": "MYRIUM",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.myrium.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/MYRIUM.webp"
+    },
+    {
+      "nom": "AGILITE SOLUTIONS",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.agilitesolutions.com/?lang=fr"
+    },
+    {
+      "nom": "Oxiam",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://oxiam.fr",
+      "img": "assets/partenaire-entreprises/LogoSite/Oxiam.png"
+    },
+    {
+      "nom": "Alsea",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://www.alsea.eu",
+      "img": "assets/partenaire-entreprises/LogoSite/Alsea.jpg"
+    },
+    {
+      "nom": "ESCT",
+      "Pack": "Simple",
+      "Surface": 9,
+      "site": "https://esct.fr"
+    },
+    {
+      "nom": "Urbaine de Travaux",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://urbaine.fayat.com"
+    },
+    {
+      "nom": "Darras et Jouanin",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://darras.fayat.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Darras et Jouanin.jpg"
+    },
+    {
+      "nom": "Fayat Immobilier Idf",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://www.fayatimmobilier-idf.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Fayat Immobilier Idf.jpg"
+    },
+    {
+      "nom": "Fayat bâtiment",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://batiment.fayat.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Fayat bâtiment.jpg"
+    },
+    {
+      "nom": "Fayat Energie Services",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://energieservices.fayat.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Fayat Energie Services.jpg"
+    },
+    {
+      "nom": "Fayat Métal",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://metal.fayat.com",
+      "img": "assets/partenaire-entreprises/LogoSite/Fayat Métal.png"
+    },
+    {
+      "nom": "Razel-Bec",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://razel-bec.fayat.com"
+    },
+    {
+      "nom": "SEFI-INTRAFOR (FAYAT FONDATIONS)",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://sefi-intrafor.fayat.com"
+    },
+    {
+      "nom": "Vinci construction",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://vinci-construction.com/fr/"
+    },
+    {
+      "nom": "Demathieu Tralux",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://www.demathieu-bard.fr/actualites/tralux-recompense-par-un-prix-national-securite/"
+    },
+    {
+      "nom": "Demathieu Immobilier",
+      "Pack": "Book",
+      "Surface": 0,
+      "site": "https://demathieu-bard-immobilier.com"
+    },
+    {
+      "nom": "Vizcab",
+      "Pack": "Start-up",
+      "Surface": 0,
+      "site": "https://vizcab.io"
     }
   ]
 
   ecole: any = [
     {
-      "nomEcole": "ESTP",
+      "nom": "ESTP",
       "img": "assets/partenaire-ecole/Logos/ESTP LOGO.jpg",
       "site": "https://www.estp.fr"
     },
     {
-      "nomEcole": "HEC",
+      "nom": "HEC",
       "img": "assets/partenaire-ecole/Logos/HEC PARIS.jpg",
       "site": "https://www.hec.edu/fr"
     },
     {
-      "nomEcole": "ENSTA Paris",
+      "nom": "ENSTA Paris",
       "site": "https://www.ensta-paris.fr/",
       "img": "assets/partenaire-ecole/Logos/ensta paris.png"
     },
     {
-      "nomEcole": "ESSEC",
+      "nom": "ESSEC",
       "img": "assets/partenaire-ecole/Logos/essec.jpg",
       "site": "https://www.essec.edu/fr/"
     },
     {
-      "nomEcole": "Arts et Métiers",
+      "nom": "Arts et Métiers",
       "img": "assets/partenaire-ecole/Logos/arts et metiers.png",
       "site": "https://artsetmetiers.fr/fr",
     },
     {
-      "nomEcole": "EDHEC",
+      "nom": "EDHEC",
       "img": "assets/partenaire-ecole/Logos/EDHEC.jpg",
       "site": "https://www.edhec.edu/fr"
     },
     {
-      "nomEcole": "ENSA Paris La Villette",
+      "nom": "ENSA Paris La Villette",
       "img": "assets/partenaire-ecole/Logos/ENSA La Villette.png",
       "site": "http://www.paris-lavillette.archi.fr/"
     },
     {
-      "nomEcole": "EPF",
+      "nom": "EPF",
       "img": "assets/partenaire-ecole/Logos/EPF.jpeg",
       "site": "https://www.epf.fr"
     },
     {
-      "nomEcole": "ECE Paris",
+      "nom": "ECE Paris",
       "img": "assets/partenaire-ecole/Logos/ECE_Paris-510x510.jpg",
       "site": "https://www.ece.fr"
     },
 
     {
-      "nomEcole": "CESI",
+      "nom": "CESI",
       "img": "assets/partenaire-ecole/Logos/CESI.jpg",
       "site": "https://www.cesi.fr"
     },
     {
-      "nomEcole": "Ecole supérieure du Bois",
+      "nom": "Ecole supérieure du Bois",
       "img": "assets/partenaire-ecole/Logos/Ecole supérieure du bois.png",
       "site": "https://www.esb-campus.fr/"
     },
     {
-      "nomEcole": "CY Tech Cergy",
+      "nom": "CY Tech Cergy",
       "img": "assets/partenaire-ecole/Logos/cy tech cergy.png",
       "site": "https://cytech.cyu.fr/"
     },
     {
-      "nomEcole": "Polytech Paris Saclay",
+      "nom": "Polytech Paris Saclay",
       "img": "assets/partenaire-ecole/Logos/polytech paris saclay.png",
       "site": "https://www.polytech.universite-paris-saclay.fr/"
     },
     {
-      "nomEcole": "IPSA",
+      "nom": "IPSA",
       "img": "assets/partenaire-ecole/Logos/IPSA.jpg",
       "site": "https://www.ipsa.fr/"
     },
     {
-      "nomEcole": "Ecotec",
+      "nom": "Ecotec",
       "img": "assets/partenaire-ecole/Logos/ECOTEC-Logo_slider.png",
       "site": "https://www.ecotec.org/"
     },
     {
-      "nomEcole": "ESIEA",
+      "nom": "ESIEA",
       "img": "assets/partenaire-ecole/Logos/esiea.jpg",
       "site": "https://www.esiea.fr/"
     },
 
     {
-      "nomEcole": "CFA Noisy le grand",
+      "nom": "CFA Noisy le grand",
       "img": "assets/partenaire-ecole/Logos/CFA Noisy le grand.jpg",
       "site": "https://btpcfa-iledefrance.fr/"
     },
     {
-      "nomEcole": "INSA Rennes",
+      "nom": "INSA Rennes",
       "img": "assets/partenaire-ecole/Logos/INSA Rennes.jpg",
       "site": "https://www.insa-rennes.fr/"
     },
     {
-      "nomEcole": "INSA Haut de France",
+      "nom": "INSA Haut de France",
       "img": "assets/partenaire-ecole/Logos/insa-hauts-de-france.png",
       "site": "https://www.insa-hautsdefrance.fr/"
     },
     {
-      "nomEcole": "ECAM EPMI",
+      "nom": "ECAM EPMI",
       "img": "assets/partenaire-ecole/Logos/ECAM EPMI.png",
       "site": "https://www.ecam-epmi.fr/"
     },
     {
-      "nomEcole": "ESTACA",
+      "nom": "ESTACA",
       "img": "assets/partenaire-ecole/Logos/estaca.jpg",
       "site": "https://www.estaca.fr/"
     },
     {
-      "nomEcole": "INSTN",
+      "nom": "INSTN",
       "img": "assets/partenaire-ecole/Logos/INSTN_logo.jpg",
       "site": "https://instn.cea.fr/"
     },
     {
-      "nomEcole": "Ecole d'ingénieur Denis Diderot",
+      "nom": "Ecole d'ingénieur Denis Diderot",
       "img": "assets/partenaire-ecole/Logos/Ecole Denis Diderot.png",
       "site": "https://u-paris.fr/eidd/"
     },
     {
-      "nomEcole": "Télécom Physique Strasbourg",
+      "nom": "Télécom Physique Strasbourg",
       "img": "assets/partenaire-ecole/Logos/telecom physique strasbourg.png",
       "site": "https://www.telecom-physique.fr/"
     },
     {
-      "nomEcole": "ESAIP La Salle",
+      "nom": "ESAIP La Salle",
       "img": "assets/partenaire-ecole/Logos/ESAIP.jpg",
       "site": "https://www.esaip.org/"
     },
     {
-      "nomEcole": "ESITC",
+      "nom": "ESITC",
       "img": "assets/partenaire-ecole/Logos/ESITC.jpg",
       "site": "https://www.esitc-paris.fr/fr"
     },
     {
-      "nomEcole": "Y Schools",
+      "nom": "Y Schools",
       "img": "assets/partenaire-ecole/Logos/Y SCHOOLS.png",
       "site": "https://yschools.fr/"
     },
     {
-      "nomEcole": "Ecole Camondo",
+      "nom": "Ecole Camondo",
       "img": "assets/partenaire-ecole/Logos/Camondo.jpg",
       "site": "https://www.ecolecamondo.fr"
     },
 
     {
-      "nomEcole": "Ecole Spéciale d'Architecture",
+      "nom": "Ecole Spéciale d'Architecture",
       "img": "assets/partenaire-ecole/Logos/Ecole spéciale d_architecture.jpg",
       "site": "https://www.esa-paris.fr/spip.php?page=sommaire"
     },
     {
-      "nomEcole": "ENSA Paris Val de Seine",
+      "nom": "ENSA Paris Val de Seine",
       "img": "assets/partenaire-ecole/Logos/ENSA Paris Val de Seine.jpg",
       "site": "https://www.paris-valdeseine.archi.fr/accueil.html"
     },
 
 
     {
-      "nomEcole": "IPAG",
+      "nom": "IPAG",
       "img": "assets/partenaire-ecole/Logos/ipag-logo.png",
       "site": "https://www.ipag.edu/"
     }
@@ -316,17 +1218,17 @@ export class PartenaireComponent {
     {
       "MEDIA": "USINE NOUVELLE",
       "NOM": "L'Usine Nouvelle",
-      "description": "L'Usine Nouvelle décrypte quotidiennement l'actualité de l'industrie. A travers le site et le magazine hebdomadaire, retrouvez l'actualité clé des secteurs aéro, auto, énergie, agro et bien d'autres en France et à l'étranger.\n",
+      "description": "L'Usine Nouvelle décrypte quotidiennement l'actualité de l'industrie. A travers le site et le magazine hebdomadaire, retrouvez l'actualité clé des secteurs aéro, auto, énergie, agro et bien d'autres en France et à l'étranger./n",
       "Implantation": "",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "",
-      "Contact": "Marie Caland – Directrice Commerciale\nmcaland@infopro-digital.com – 01 79 06 73 87 / 07 44 09 33 64\n",
+      "Contact": "Marie Caland – Directrice Commerciale/nmcaland@infopro-digital.com – 01 79 06 73 87 / 07 44 09 33 64/n",
       "Slogan": "Soyez acteur du changement, contribuez à un avenir durable en postulant maintenant !",
       "Lien site": ""
     },
     {
       "MEDIA": "",
-      "NOM": "www.usinenouvelle.com\n",
+      "NOM": "www.usinenouvelle.com/n",
       "description": "",
       "Implantation": "",
       "Nombre de collaborateurs": "",
@@ -338,11 +1240,11 @@ export class PartenaireComponent {
     {
       "MEDIA": "Hors Site",
       "NOM": "Hors Site",
-      "description": "Le magazine HORS SITE est un magazine trimestriel de presse professionnelle spécialisé dans l’univers de la construction hors-site. Retrouvez à chaque numéro des interviews de personnalités de la filière, des reportages et des focus sur des innovations.\n",
+      "description": "Le magazine HORS SITE est un magazine trimestriel de presse professionnelle spécialisé dans l’univers de la construction hors-site. Retrouvez à chaque numéro des interviews de personnalités de la filière, des reportages et des focus sur des innovations./n",
       "Implantation": "Nationale",
       "Nombre de collaborateurs": "5",
-      "Activité (385 caractères)": "Le magazine HOIRS SITE est édité par le groupe HORS SITE qui a pour objectif de favoriser le déploiement des méthodes et processus de construction hors-site dans le monde de la construction. Nos activités vont de l’information à l’accompagnement stratégique et technique des maitrises d’ouvrage et donneurs d’ordres. Nous développons également une offre de formation et d’accompagnement destiné au services RH.\n",
-      "Contact": "Olivier Villeneuve olivier@hors-site.com\n",
+      "Activité (385 caractères)": "Le magazine HOIRS SITE est édité par le groupe HORS SITE qui a pour objectif de favoriser le déploiement des méthodes et processus de construction hors-site dans le monde de la construction. Nos activités vont de l’information à l’accompagnement stratégique et technique des maitrises d’ouvrage et donneurs d’ordres. Nous développons également une offre de formation et d’accompagnement destiné au services RH./n",
+      "Contact": "Olivier Villeneuve olivier@hors-site.com/n",
       "Slogan": "La construction qui défie les conventions",
       "Lien site": ""
     },
@@ -372,7 +1274,7 @@ export class PartenaireComponent {
       "MEDIA": "",
       "NOM": "Paris",
       "description": "",
-      "Implantation": "Figaro Classifieds, filiale du Groupe Figaro, rassemble à la fois des activités de média et de marketplace, spécialisées dans les annonces classées et les outils destinés aux secteurs de l’Emploi, de l’Immobilier et de l’Éducation.\nNotre mission est claire : aider chacun à faire le bon choix aux moments clés de sa vie personnelle et professionnelle.\n",
+      "Implantation": "Figaro Classifieds, filiale du Groupe Figaro, rassemble à la fois des activités de média et de marketplace, spécialisées dans les annonces classées et les outils destinés aux secteurs de l’Emploi, de l’Immobilier et de l’Éducation./nNotre mission est claire : aider chacun à faire le bon choix aux moments clés de sa vie personnelle et professionnelle./n",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "Actualité, Conseils pour bien s'orienter",
       "Contact": "www.etudiant.lefigaro.fr",
@@ -470,7 +1372,7 @@ export class PartenaireComponent {
     {
       "MEDIA": "Génie Climatique Magazine",
       "NOM": "Génie climatique Magazine",
-      "description": "Afterfioul, ventilation et QAI, avenir de la PAC et du bois-énergie, évolution de la réglementation, Génie Climatique Magazine fait le point sur les enjeux de votre profession et vous permet de mieux appréhender le marché.\n",
+      "description": "Afterfioul, ventilation et QAI, avenir de la PAC et du bois-énergie, évolution de la réglementation, Génie Climatique Magazine fait le point sur les enjeux de votre profession et vous permet de mieux appréhender le marché./n",
       "Implantation": "Paris",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "",
@@ -525,7 +1427,7 @@ export class PartenaireComponent {
     {
       "MEDIA": "Cayola Médias",
       "NOM": "Cayola Médias",
-      "description": "Connecter. Inspirer. Informer.\nNous sommes Cayola Médias, constructeurs de notoriété. De la presse aux podcasts, des réseaux sociaux aux évènements, nous construisons la notoriété de nos clients en proposant des opportunités de communication sur mesure.\n",
+      "description": "Connecter. Inspirer. Informer./nNous sommes Cayola Médias, constructeurs de notoriété. De la presse aux podcasts, des réseaux sociaux aux évènements, nous construisons la notoriété de nos clients en proposant des opportunités de communication sur mesure./n",
       "Implantation": "3 Quai Conti – 78430 Louveciennes",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "",
@@ -568,7 +1470,7 @@ export class PartenaireComponent {
     },
     {
       "MEDIA": "",
-      "NOM": "www.cayola-medias.com\n",
+      "NOM": "www.cayola-medias.com/n",
       "description": "",
       "Implantation": "",
       "Nombre de collaborateurs": "",
@@ -580,7 +1482,7 @@ export class PartenaireComponent {
     {
       "MEDIA": "Architecture Bois Magazine",
       "NOM": "ARCHITECTURE BOIS",
-      "description": "Architecture Bois est un magazine d’informations, spécialisé sur la construction et la maison bois. Depuis 2004, nous analysons et relayons le developpement de la construction bois à travers des dossiers d’informations, actualités et innovations produits, des reportages de bâtiments et maison bois.\n",
+      "description": "Architecture Bois est un magazine d’informations, spécialisé sur la construction et la maison bois. Depuis 2004, nous analysons et relayons le developpement de la construction bois à travers des dossiers d’informations, actualités et innovations produits, des reportages de bâtiments et maison bois./n",
       "Implantation": "Chez les marchands de journaux et site",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "",
@@ -635,7 +1537,7 @@ export class PartenaireComponent {
     {
       "MEDIA": "FORBES",
       "NOM": "FORBES",
-      "description": "Forbes est le seul média mondialement connu synonyme d'ENTREPRENEURIAT, de RÉUSSITE et D'EXCELLENCE.\nForbes Magazine, plus ancien titre Business des Etats-Unis propose depuis 2016 toute son actualité en français sur son site: forbes.fr et depuis le 6 octobre 2017 propose une version papier.\nRetrouvez dans Forbes toute l'actualité Business, Finance, Technologie, Management, Entrepreneurs, Luxe, Lifestyle et les Classements qui font référence dans le monde.\nForbes touche plus de 94 millions de lecteurs dans le monde avec ses 38 éditions locales .",
+      "description": "Forbes est le seul média mondialement connu synonyme d'ENTREPRENEURIAT, de RÉUSSITE et D'EXCELLENCE./nForbes Magazine, plus ancien titre Business des Etats-Unis propose depuis 2016 toute son actualité en français sur son site: forbes.fr et depuis le 6 octobre 2017 propose une version papier./nRetrouvez dans Forbes toute l'actualité Business, Finance, Technologie, Management, Entrepreneurs, Luxe, Lifestyle et les Classements qui font référence dans le monde./nForbes touche plus de 94 millions de lecteurs dans le monde avec ses 38 éditions locales .",
       "Implantation": "",
       "Nombre de collaborateurs": "",
       "Activité (385 caractères)": "",
@@ -11487,6 +12389,19 @@ export class PartenaireComponent {
     this.route.queryParams.subscribe(params => {
       this.dataType = params['type'];
       if (params['type'] === 'entreprise') {
+        this.entreprise.sort((a: any, b: any) => {
+          // Check if both have "Plus" pack
+          const aPlus = a.Pack === 'Plus' ? 1 : 0;
+          const bPlus = b.Pack === 'Plus' ? 1 : 0;
+
+          // Sort by Pack type first (Plus on top)
+          if (aPlus !== bPlus) {
+            return bPlus - aPlus;
+          }
+
+          // If both have the same Pack type, sort by Surface
+          return b.Surface - a.Surface;
+        });
         this.loopData = this.entreprise;
       } else if (params['type'] === 'ecole') {
         this.loopData = this.ecole;

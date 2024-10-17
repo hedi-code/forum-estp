@@ -1,36 +1,47 @@
 <ng-container *ngIf="dataType === 'entreprise'">
-    <title-separator title="Nos entreprises partenaires"></title-separator>
-    <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
-        <ng-container *ngFor="let data of loopData">
-            <a target="_blank"
-                class="w-full h-full gap-2 flex flex-col justify-center content-center justify-self-center items-center content-center justify-items-center lg:p-4 p-5 bg-white rounded-xl flex flex-col justify-between align-center"
-                href="{{data.site}}">
-                <img src="{{data.img}}" alt="" srcset="" class="max-h-[5rem] w-full px-8">
-                <p class="text-center">{{data.Nom}}</p>
-            </a>
-        </ng-container>
+    <title-separator class="w-[100%]" title="Nos entreprises partenaires"></title-separator>
+    <div class="flex justify-center flex-col items-center relative w-full pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 ">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-4 place-content-center gap-2">
+            <ng-container *ngFor="let data of loopData">
+                <a target="_blank"
+                    class="py-6 px-2 bg-white relative rounded-xl flex flex-col justify-center  w-[150px] h-[150px] lg:w-[290px] lg:h-[200px] items-center"
+                    href="{{data.site}}">
+                    <img src="{{data.img}}" alt="" srcset=""
+                        class="lg:max-h-[5rem] lg:max-w-[8rem] max-h-[2rem] max-w-[7rem] px-8">
+                    <p class="text-center w-full absolute bottom-[10px] left-[50%] translate-x-[-50%]">{{data.nom}}</p>
+                </a>
+            </ng-container>
+        </div>
     </div>
 </ng-container>
 <ng-container *ngIf="dataType === 'ecole'">
-    <title-separator title="Nos école partenaires"></title-separator>
-    <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
-        <ng-container *ngFor="let data of loopData">
-            <a class="w-full h-full gap-2 flex flex-col justify-center content-center justify-self-center items-center content-center justify-items-center lg:p-4 p-5 bg-white rounded-xl flex flex-col justify-between align-center"
-                href="{{data.site}}" target="_blank">
-                <img src="{{data.img}}" alt="" srcset="" class="max-h-[5rem] w-full px-8">
-                <p class="text-center">{{data.nomEcole}}</p>
-            </a>
-        </ng-container>
+    <title-separator title="Nos écoles partenaires"></title-separator>
+    <div class="flex justify-center flex-col items-center relative w-full pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 ">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-4 place-content-center gap-2">
+            <ng-container *ngFor="let data of loopData">
+                <a target="_blank"
+                    class="py-6 px-2 bg-white relative rounded-xl flex flex-col justify-center  w-[150px] h-[150px] lg:w-[290px] lg:h-[200px] items-center"
+                    href="{{data.site}}">
+                    <img src="{{data.img}}" alt="" srcset=""
+                        class="lg:max-h-[5rem] lg:max-w-[8rem] max-h-[2rem] max-w-[7rem] px-8">
+                    <p class="text-center w-full absolute bottom-[10px] left-[50%] translate-x-[-50%]">{{data.nom}}
+                    </p>
+                </a>
+            </ng-container>
+        </div>
     </div>
 </ng-container>
 <ng-container *ngIf="dataType === 'presse'">
     <title-separator title="Nos partenaires presse"></title-separator>
-    <div class="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
-        <ng-container *ngFor="let data of loopData">
-            <a class="lg:p-14 p-5 bg-white rounded-xl flex flex-col justify-between" href="{{data.site}}">
-                <img src="{{data.src}}" alt="" srcset="">
-                <p class="text-center">{{data.NOM}}</p>
-            </a>
-        </ng-container>
+    <div class="flex justify-center flex-col items-center relative w-full pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 ">
+        <div class="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+            <ng-container *ngFor="let data of loopData">
+                <a class="lg:p-14 relative py-6 bg-white rounded-xl flex flex-col justify-center  w-[150px] h-[150px] lg:w-[290px] lg:h-[200px] lg:items-center"
+                    href="{{data.site}}">
+                    <img src="{{data.src}}" alt="" srcset="">
+                    <p class="text-center">{{data.NOM}}</p>
+                </a>
+            </ng-container>
+        </div>
     </div>
 </ng-container>
