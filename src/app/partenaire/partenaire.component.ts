@@ -1534,6 +1534,12 @@ export class PartenaireComponent {
         this.loopData = this.ecole;
       }
       else {
+        this.presse.sort((a: any, b: any) => {
+          if (a.Classement === null && b.Classement === null) return 0;
+          if (a.Classement === null) return 1;
+          if (b.Classement === null) return -1;
+          return a.Classement - b.Classement;
+        });
         this.loopData = this.presse;
       }
     });

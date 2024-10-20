@@ -33,25 +33,24 @@
 </ng-container>
 <ng-container *ngIf="dataType === 'presse'">
     <title-separator title="Nos partenaires presse"></title-separator>
-    <div class="flex justify-center flex-col items-center relative w-full pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 ">
-        <div class="grid grid-cols-1 md:grid-cols-4 mt-4 place-content-center gap-2">
-            <ng-container *ngFor="let data of loopData">
-                <div target="_blank" class="p-5 flex flex-col justify-top bg-white w-full h-full gap-2 flex flex-col">
-                    <div class="flex flex-col justify-top align-center items-center ">
-                        <img src="{{data.img}}" alt="" srcset=""
-                            class="lg:max-h-[8rem] lg:max-w-[12rem] lg:mt-4 max-h-[2rem] max-w-[7rem] px-8">
-                    </div>
-                    <div class="flex flex-col h-full justify-items-center align-center items-center lg:mt-14 mt-10">
-
-                        <p class=" text-center text-semibold">{{data.nom}}</p>
-                        <p class="text-sm mt-10">{{data.description}}</p>
-
-                    </div>
-
-                    <a class="py-1 mt-4 text-center bg-primary rounded-lg text-white font-semibold w-full"
+    <div
+        class="grid grid-cols-1 md:grid-cols-4 mt-4 place-content-center gap-2 pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 w-full">
+        <ng-container *ngFor="let data of loopData">
+            <div class="p-5 rounded-xl flex flex-col justify-between bg-white w-full h-full flex flex-col">
+                <div class="flex flex-col rounded-xl justify-center align-center items-center h-full lg:h-[230px]">
+                    <img src="{{data.img}}" alt="" srcset=""
+                        class="lg:max-h-[8rem] rounded-xl lg:max-w-[12rem] max-h-[2rem] max-w-[7rem] px-5">
+                </div>
+                <div class="flex flex-col justify-top align-center items-center h-full mb-5">
+                    <p class="mt-5 text-center text-bold">{{data.nom}}</p>
+                    <p class="text-sm mt-5">{{data.description}}</p>
+                </div>
+                <div class="flex flex-col justify-base items-center h-full lg:h-[35px]">
+                    <a class="py-2 text-center bg-primary rounded-lg text-white font-semibold w-full"
                         href="{{data.site}}" target="_blank">Site web</a>
                 </div>
-            </ng-container>
-        </div>
+
+            </div>
+        </ng-container>
     </div>
 </ng-container>
