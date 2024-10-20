@@ -34,13 +34,23 @@
 <ng-container *ngIf="dataType === 'presse'">
     <title-separator title="Nos partenaires presse"></title-separator>
     <div class="flex justify-center flex-col items-center relative w-full pr-8 pl-8 pt-5 lg:pr-40 lg:pl-40 mt-4 ">
-        <div class="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-4 pr-10 pl-10 pt-5 lg:pr-40 lg:pl-40 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 mt-4 place-content-center gap-2">
             <ng-container *ngFor="let data of loopData">
-                <a class="lg:p-14 relative py-6 bg-white rounded-xl flex flex-col justify-center  w-[150px] h-[150px] lg:w-[290px] lg:h-[200px] lg:items-center"
-                    href="{{data.site}}">
-                    <img src="{{data.src}}" alt="" srcset="">
-                    <p class="text-center">{{data.NOM}}</p>
-                </a>
+                <div target="_blank" class="p-5 flex flex-col justify-top bg-white w-full h-full gap-2 flex flex-col">
+                    <div class="flex flex-col justify-top align-center items-center ">
+                        <img src="{{data.img}}" alt="" srcset=""
+                            class="lg:max-h-[8rem] lg:max-w-[12rem] lg:mt-4 max-h-[2rem] max-w-[7rem] px-8">
+                    </div>
+                    <div class="flex flex-col h-full justify-items-center align-center items-center lg:mt-14 mt-10">
+
+                        <p class=" text-center text-semibold">{{data.nom}}</p>
+                        <p class="text-sm mt-10">{{data.description}}</p>
+
+                    </div>
+
+                    <a class="py-1 mt-4 text-center bg-primary rounded-lg text-white font-semibold w-full"
+                        href="{{data.site}}" target="_blank">Site web</a>
+                </div>
             </ng-container>
         </div>
     </div>
